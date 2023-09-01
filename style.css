@@ -26,6 +26,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
 }
 
 .profile-image{
@@ -33,7 +45,7 @@ body{
     width: 9.375rem;
     height: 9.375rem;
     border-radius: 50%;
-    background-color: #93252A;
+    background-color: #4070f4;
     padding: 0.1875rem;
 }
 
@@ -45,3 +57,87 @@ body{
     border: 0.1875rem solid #fff;
 }
 
+.text-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: .9375rem;
+}
+
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.125rem;
+    width: 2.125rem;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #93252A;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5625rem;
+}
+
+.buttons .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 8px 1.5rem;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.buttons .button:hover{
+    background-color: #0e4bf1;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .stat{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.stat:last-child{
+    border-right: none;
+}
+
+.stat i{
+    font-size: 18px;
+    margin-right: 6px;
+
+}
