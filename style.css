@@ -15,5 +15,33 @@ body{
     align-items: center;
 }
 
+.profile-card{
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.profile-image{
+    position: relative;
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    background-color: #93252A;
+    padding: 0.1875rem;
+}
+
+.profile-image .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.1875rem solid #fff;
+}
 
